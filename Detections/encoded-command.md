@@ -22,4 +22,4 @@ malicious scripts.
 - Throttle: 60 minutes
 
 ## Screenshot
-![Encoded Command Detection](..Home_SOC_Lab/Encoded_Command.png)
+<img width="1284" height="822" alt="Encoded Command" src="https://github.com/user-attachments/assets/1306bdce-2232-4bd5-a763-de4f2eba143c" />
