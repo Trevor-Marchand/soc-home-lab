@@ -22,4 +22,4 @@ malicious scripts.
 - Throttle: 60 minutes
 
 ## Screenshot
-![Encoded Command Detection](../screenshots/encoded-command-splunk.png)
+![Encoded Command Detection](..Home_SOC_Lab/Encoded_Command.png)
