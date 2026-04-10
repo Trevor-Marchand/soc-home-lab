@@ -15,8 +15,6 @@ malicious scripts.
 - Key Field: Message
 
 ## Alert Settings
-- Run every: 5 minutes
-- Time range: Last 5 minutes
 - Trigger: Number of results > 0
 - Severity: High
 - Throttle: 60 minutes
