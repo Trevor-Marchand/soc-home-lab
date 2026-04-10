@@ -21,3 +21,6 @@ to enumerate current user context and privilege level.
 - Trigger: Number of results > 0
 - Severity: Medium
 - Throttle: 60 minutes
+
+## Screenshot
+<img width="1282" height="801" alt="whoami" src="https://github.com/user-attachments/assets/21788a11-207c-4cd1-a279-5637e1d4a4b4" />
