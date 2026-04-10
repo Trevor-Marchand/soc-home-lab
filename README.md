@@ -40,7 +40,5 @@ All 4 detections have been configured as Splunk alerts with:
 - [Sysmon Setup](setup/sysmon-setup.md)
 
 ## Screenshots
-![Encoded Command](screenshots/encoded-command-splunk.png)
-![Invalid Login](screenshots/invalid-login-splunk.png)
-![Invoke WebRequest](screenshots/invoke-webrequest-splunk.png)
-![whoami](screenshots/whoami-splunk.png)
+Screenshots for each detection are included in their 
+respective detection files in the /detections folder.
