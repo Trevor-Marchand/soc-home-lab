@@ -20,3 +20,6 @@ malicious scripts.
 - Trigger: Number of results > 0
 - Severity: High
 - Throttle: 60 minutes
+
+## Screenshot
+![Encoded Command Detection](../screenshots/encoded-command-splunk.png)
