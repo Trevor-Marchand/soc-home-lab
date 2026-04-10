@@ -24,7 +24,6 @@ Ubuntu VM (Splunk SIEM) ← port 9997 ← Windows 10 VM (Target + Forwarder)
 
 ## Alerts
 All 4 detections have been configured as Splunk alerts with:
-- Scheduled runs every 5-15 minutes
 - Trigger threshold tuned per detection
 - Severity levels assigned
 - Results logged to Triggered Alerts
