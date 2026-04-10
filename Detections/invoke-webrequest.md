@@ -19,3 +19,6 @@ external URLs. Commonly used to download malware payloads.
 - Trigger: Number of results > 0
 - Severity: High
 - Throttle: 60 minutes
+
+## Screenshot
+<img width="1281" height="823" alt="Invoke WebRequest" src="https://github.com/user-attachments/assets/39ed7c3f-6b39-48f4-a7e5-a876afd1e7ee" />
