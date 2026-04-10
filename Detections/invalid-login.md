@@ -21,3 +21,6 @@ brute force or credential stuffing attack.
 - Trigger: Number of results > 5
 - Severity: Medium
 - Throttle: 30 minutes
+
+## Screenshot
+<img width="1280" height="798" alt="Invalid Login" src="https://github.com/user-attachments/assets/f1684cc8-c7d3-478b-9a8d-c6f55f176a73" />
