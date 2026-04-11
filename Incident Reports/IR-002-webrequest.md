@@ -1,4 +1,4 @@
-# IR-002 — Suspicious PowerShell Web Request Detected
+# IR-001 — Suspicious PowerShell Web Request Detected
 
 **Date:** April 10, 2026
 **Severity:** High
