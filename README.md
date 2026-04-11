@@ -36,6 +36,16 @@ I configured all three detections as real-time Splunk alerts with
 tuned thresholds and throttling to reduce noise. All alerts log 
 to Triggered Alerts in Splunk.
 
+<img width="1283" height="800" alt="All Alerts" src="https://github.com/user-attachments/assets/e27522bd-1a65-4347-9760-021dab19ef45" />
+
+
+## Triggered Alerts
+After running attack simulations all three alerts fired successfully 
+and were logged in Splunk's Triggered Alerts dashboard.
+
+<img width="1279" height="801" alt="Triggered Alerts" src="https://github.com/user-attachments/assets/6c9b0db2-1773-4361-a290-cf04a9bc9a9b" />
+
+
 ## Incident Reports
 - [IR-001 Suspicious Web Request](incident-reports/IR-001-web-request.md)
 - [IR-002 Brute Force Login](incident-reports/IR-002-brute-force.md)
