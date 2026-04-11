@@ -1,5 +1,10 @@
 # Alert Configurations
 
+I configured all four detections as real-time Splunk alerts. I 
+chose real-time alerting for this lab to get immediate notification 
+of suspicious activity. I also tuned the thresholds and throttling 
+for each alert to reduce noise while maintaining detection coverage.
+
 | Alert | Schedule | Threshold | Severity | Throttle |
 |---|---|---|---|---|
 | Encoded PowerShell | Real-Time | > 0 | High | 60 min |
@@ -7,10 +12,13 @@
 | Invoke-WebRequest | Real-Time | > 0 | High | 60 min |
 | whoami Recon | Real-Time | > 0 | Medium | 60 min |
 
-All alerts configured to:
-- Schedule: Real-Time
+All alerts are configured to:
 - Add to Triggered Alerts
 - Expiration: 24 hours
+
+> Note: I used real-time alerts in this lab for immediate detection. 
+> In a production SOC scheduled alerts are often preferred to reduce 
+> system load on the SIEM.
 
 ## Screenshot
 <img width="1276" height="797" alt="All Alerts" src="https://github.com/user-attachments/assets/54886bb7-dab2-4ffc-918d-b6f920e0273d" />
