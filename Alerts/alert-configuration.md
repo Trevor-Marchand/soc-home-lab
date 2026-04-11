@@ -20,4 +20,5 @@ All alerts are configured to:
 > system load on the SIEM.
 
 ## Screenshot
+<img width="1283" height="800" alt="All Alerts" src="https://github.com/user-attachments/assets/b3afe5e8-8237-4652-876c-15109658d1ea" />
 
