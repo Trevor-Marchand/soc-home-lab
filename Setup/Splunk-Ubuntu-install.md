@@ -43,7 +43,7 @@ sudo /opt/splunk/bin/splunk enable boot-start
 
 ### 6. Accessed Splunk Web
 Once installed I accessed the Splunk web interface at:
-http://<Ubuntu-IP>:8000
+http://<trevor-VMware-Virtual-Platform>:8000
 
 ## Enabling Log Receiving
 To allow the Windows forwarder to send logs I configured Splunk 
