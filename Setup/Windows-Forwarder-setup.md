@@ -1,43 +1,48 @@
 # Splunk Universal Forwarder Setup — Windows 10
 
 ## VM Specifications
+I configured the Windows 10 VM as the target endpoint:
 - OS: Windows 10
 - RAM: 4 GB
 - CPU: 2 cores
 - Disk: 40 GB
 
-## Installation
+## What I Did
 
-### 1. Download Forwarder
-Download Splunk Universal Forwarder from:
+### 1. Downloaded the Universal Forwarder
+I downloaded the Splunk Universal Forwarder for Windows from:
 https://www.splunk.com/en_us/download/universal-forwarder.html
 
-### 2. Install via PowerShell (Admin)
+### 2. Installed the Forwarder
+I installed it silently via PowerShell running as Administrator:
 ```powershell
 msiexec.exe /i splunkforwarder.msi AGREETOLICENSE=Yes /quiet
 ```
 
-### 3. Configure Forwarder
+### 3. Connected the Forwarder to Splunk
+I pointed the forwarder to my Ubuntu Splunk instance and added 
+the core Windows event log sources:
 ```powershell
 cd "C:\Program Files\SplunkUniversalForwarder\bin"
 
-# Connect to Splunk server
 .\splunk.exe add forward-server :9997
 
-# Add Windows Event Logs
 .\splunk.exe add monitor "WinEventLog://Security"
 .\splunk.exe add monitor "WinEventLog://System"
 .\splunk.exe add monitor "WinEventLog://Application"
 
-# Start forwarder
 .\splunk.exe start
 ```
 
-## Configure inputs.conf
-Navigate to:
+### 4. Configured inputs.conf
+I manually edited inputs.conf to add the PowerShell Operational 
+and Sysmon logs which are not added by default. This was an 
+important step because without this Event ID 4104 would not 
+be collected:
+```
 C:\Program Files\SplunkUniversalForwarder\etc\system\local\inputs.conf
+```
 
-Add the following:
 ```ini
 [WinEventLog://Application]
 disabled = 0
@@ -79,12 +84,15 @@ checkpointInterval = 5
 renderXml = false
 ```
 
-### Restart Forwarder
+### 5. Restarted the Forwarder
+After updating inputs.conf I restarted the forwarder to apply 
+the changes:
 ```powershell
 Restart-Service SplunkForwarder
 ```
 
-## Verify Connection
-In Splunk Web run:
+## Verifying the Connection
+I confirmed logs were flowing into Splunk by running:
 index="windows" | stats count by sourcetype
-All configured log sources should appear.
+All configured log sources appeared in the results confirming 
+the pipeline was working correctly.
