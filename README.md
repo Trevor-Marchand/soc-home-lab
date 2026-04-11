@@ -19,28 +19,29 @@ around suspicious activity.
 ## Architecture
 I set up two VMs on the same NAT network in VirtualBox. The Windows 
 10 VM acts as the target endpoint and forwards logs to Splunk running 
-on the Ubuntu VM via the Universal Forwarder on port 9997.Windows 10 VM → Universal Forwarder → Ubuntu VM (Splunk) port 9997
+on the Ubuntu VM via the Universal Forwarder on port 9997.
+Windows 10 VM → Universal Forwarder → Ubuntu VM (Splunk) port 9997
 
 ## Detections Built
-I built four detections covering different stages of an attack:
+I built three detections covering different stages of an attack:
 
 | Detection | Event ID | Source | Tactic |
 |---|---|---|---|
-| Encoded PowerShell Command | 4104 | PowerShell Operational | Obfuscation |
 | Suspicious Web Request | 4104 | PowerShell Operational | Payload Delivery |
 | Failed Login / Brute Force | 4625 | Windows Security | Brute Force |
 | Reconnaissance - whoami | 1 | Sysmon | Reconnaissance |
 
 ## Alerts
-I configured all four detections as real-time Splunk alerts with 
+I configured all three detections as real-time Splunk alerts with 
 tuned thresholds and throttling to reduce noise. All alerts log 
 to Triggered Alerts in Splunk.
 
+![All Alerts](screenshots/all-alerts-splunk.png)
+
 ## Incident Reports
-- [IR-001 Encoded PowerShell](incident-reports/IR-001-encoded-powershell.md)
-- [IR-002 Suspicious Web Request](incident-reports/IR-002-web-request.md)
-- [IR-003 Brute Force Login](incident-reports/IR-003-brute-force.md)
-- [IR-004 whoami Recon](incident-reports/IR-004-whoami-recon.md)
+- [IR-001 Suspicious Web Request](incident-reports/IR-001-web-request.md)
+- [IR-002 Brute Force Login](incident-reports/IR-002-brute-force.md)
+- [IR-003 whoami Recon](incident-reports/IR-003-whoami-recon.md)
 
 ## Setup Guides
 - [Splunk on Ubuntu](setup/splunk-ubuntu-install.md)
