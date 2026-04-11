@@ -1,13 +1,14 @@
 # Detection: Suspicious Encoded PowerShell Command
 
 ## Search Query
-index="windows" source="wineventlog:microsoft-windows-powershell/operational"
-EventCode=4104 Message="Write-Host"
+index="windows" source="wineventlog:microsoft-windows-powershell/operational" 
+EventCode=4104 Message="*EncodedCommand*"
 
 ## What It Detects
-Execution of Base64 encoded PowerShell commands using the 
--EncodedCommand flag. Commonly used by attackers to obfuscate 
-malicious scripts.
+Detects the use of the -EncodedCommand flag in PowerShell which is 
+used to execute Base64 encoded commands. This is a common obfuscation 
+technique used by attackers to hide malicious scripts from basic 
+string-based detections.
 
 ## Event Details
 - Log: Microsoft-Windows-PowerShell/Operational
