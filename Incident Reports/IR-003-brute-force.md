@@ -1,4 +1,4 @@
-# IR-003 — Brute Force Login Attempt
+# IR-002 — Brute Force Login Attempt
 
 **Date:** April 10, 2026
 **Severity:** Medium
