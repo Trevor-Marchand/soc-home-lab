@@ -1,4 +1,4 @@
-# IR-004 — Post-Exploitation Reconnaissance - whoami Detected
+# IR-003 — Post-Exploitation Reconnaissance - whoami Detected
 
 **Date:** April 10, 2026
 **Severity:** Medium
