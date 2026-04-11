@@ -43,9 +43,8 @@ be collected:
 C:\Program Files\SplunkUniversalForwarder\etc\system\local\inputs.conf
 ```
 
+## Screenshot
 <img width="1009" height="768" alt="Inputs" src="https://github.com/user-attachments/assets/8c1b4bb2-4a21-4fdb-84dc-95db55a65f46" />
-
-
 
 
 ### 5. Restarted the Forwarder
