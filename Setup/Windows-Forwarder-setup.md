@@ -43,46 +43,10 @@ be collected:
 C:\Program Files\SplunkUniversalForwarder\etc\system\local\inputs.conf
 ```
 
-```ini
-[WinEventLog://Application]
-disabled = 0
-index = windows
-start_from = oldest
-current_only = 0
-checkpointInterval = 5
+<img width="1009" height="768" alt="Inputs" src="https://github.com/user-attachments/assets/8c1b4bb2-4a21-4fdb-84dc-95db55a65f46" />
 
-[WinEventLog://Microsoft-Windows-Sysmon/Operational]
-disabled = 0
-index = windows
-start_from = oldest
-current_only = 0
-checkpointInterval = 5
-renderXml = false
 
-[WinEventLog://System]
-disabled = 0
-index = windows
-start_from = oldest
-current_only = 0
-checkpointInterval = 5
-renderXml = false
 
-[WinEventLog://Security]
-disabled = 0
-index = windows
-start_from = oldest
-current_only = 0
-checkpointInterval = 5
-renderXml = false
-
-[WinEventLog://Microsoft-Windows-PowerShell/Operational]
-disabled = 0
-index = windows
-start_from = oldest
-current_only = 0
-checkpointInterval = 5
-renderXml = false
-```
 
 ### 5. Restarted the Forwarder
 After updating inputs.conf I restarted the forwarder to apply 
