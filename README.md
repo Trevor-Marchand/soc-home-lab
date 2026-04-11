@@ -47,13 +47,13 @@ and were logged in Splunk's Triggered Alerts dashboard.
 
 
 ## Incident Reports
-- [IR-001 Suspicious Web Request](Incident%20Reports/IR-001-web-request.md)
+- [IR-001 Suspicious Web Request](Incident%20Reports/IR-001-webrequest.md)
 - [IR-002 Brute Force Login](Incident%20Reports/IR-002-brute-force.md)
 - [IR-003 whoami Recon](Incident%20Reports/IR-003-whoami-recon.md)
 
 ## Setup Guides
-- [Splunk on Ubuntu](Setup/splunk-ubuntu-install.md)
-- [Windows Forwarder Setup](Setup/windows-forwarder-setup.md)
+- [Splunk on Ubuntu](Setup/Splunk-Ubuntu-install.md)
+- [Windows Forwarder Setup](Setup/Windows-Forwarder-setup.md)
 - [Sysmon Setup](Setup/Sysmon-setup.md)
 
 ## Screenshots
