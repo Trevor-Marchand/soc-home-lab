@@ -54,7 +54,7 @@ and were logged in Splunk's Triggered Alerts dashboard.
 ## Setup Guides
 - [Splunk on Ubuntu](Setup/splunk-ubuntu-install.md)
 - [Windows Forwarder Setup](Setup/windows-forwarder-setup.md)
-- [Sysmon Setup](Setup/sysmon-setup.md)
+- [Sysmon Setup](Setup/Sysmon-setup.md)
 
 ## Screenshots
 Screenshots for each detection are included in their respective 
