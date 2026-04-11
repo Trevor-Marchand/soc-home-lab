@@ -36,8 +36,6 @@ I configured all three detections as real-time Splunk alerts with
 tuned thresholds and throttling to reduce noise. All alerts log 
 to Triggered Alerts in Splunk.
 
-![All Alerts](screenshots/all-alerts-splunk.png)
-
 ## Incident Reports
 - [IR-001 Suspicious Web Request](incident-reports/IR-001-web-request.md)
 - [IR-002 Brute Force Login](incident-reports/IR-002-brute-force.md)
