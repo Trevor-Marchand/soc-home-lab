@@ -9,9 +9,6 @@ or brute force activity.
 
 ## Search Query
 index="windows" source="WinEventLog:Security" EventCode=4625
-| stats count by Account_Name, Source_Network_Address
-| where count > 5
-| sort -count
 
 ## Why I Used Event ID 4625
 Event ID 4625 is the standard Windows failed logon event. I used 
